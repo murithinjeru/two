@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html>
+    <!--
+  * Please see the included README.md file for license terms and conditions.
+  -->
+
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="jqm/jquery.mobile-min.css">
+        <title>Blank App Designer Cordova Web App Project Template</title>
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+
+        <!--
+  * The "meta viewport" tag (below) helps your app size appropriately to a device's ideal viewport.
+  * Note that Windows device viewports work better when initialized using the @viewport CSS rule.
+  * For a quick overview of "meta viewport" and @viewport, see this article:
+  *   http://webdesign.tutsplus.com/tutorials/htmlcss-tutorials/quick-tip-dont-forget-the-viewport-meta-tag
+  * To see how it works, try your app on a real device with and without a "meta viewport" tag.
+  * Additional useful references include:
+  *   http://www.quirksmode.org/mobile/viewports.html
+  *   http://www.quirksmode.org/mobile/metaviewport/devices.html
+  *   https://developer.apple.com/library/safari/documentation/AppleApplications/Reference/SafariHTMLRef/Articles/MetaTags.html
+-->
+
+        <!-- <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1"> -->
+        <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=no">
+        <!-- <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes, minimum-scale=1, maximum-scale=2"> -->
+
+        <style>
+            /* following three (cascaded) are equivalent to above three meta viewport statements */
+            /* see http://www.quirksmode.org/blog/archives/2014/05/html5_dev_conf.html */
+            /* see http://dev.w3.org/csswg/css-device-adapt/ */
+                @-ms-viewport { width: 100vw ; min-zoom: 100% ; zoom: 100% ; }          @viewport { width: 100vw ; min-zoom: 100% zoom: 100% ; }
+                @-ms-viewport { user-zoom: fixed ; min-zoom: 100% ; }                   @viewport { user-zoom: fixed ; min-zoom: 100% ; }
+                /*@-ms-viewport { user-zoom: zoom ; min-zoom: 100% ; max-zoom: 200% ; }   @viewport { user-zoom: zoom ; min-zoom: 100% ; max-zoom: 200% ; }*/
+        </style>
+
+        <link rel="stylesheet" href="css/app.css">
+        <link rel="stylesheet" type="text/css" href="css/index_main.less.css" class="main-less">
+
+        <!-- IMPORTANT: Do not include a weinre script tag as part of your release builds! -->
+        <!-- Place your remote debugging (weinre) script URL from the Test tab here, if it does not work below -->
+        <!-- <script src="http://debug-software.intel.com/target/target-script-min.js#insertabiglongfunkynumberfromthexdkstesttab"></script> -->
+
+        <!-- Recommended location for your JavaScript libraries -->
+        <!-- These library references (below) are just examples to give you the general idea... -->
+        <!-- <script src="lib/mc/hammer.js"></script> -->
+        <!-- <script src="lib/ft/fastclick.js"></script> -->
+
+        <!--
+  * cordova.js is a phantom lib for "Cordova HTML5 web app," it does nothing in a "Standard HTML5 web app"
+  * Seeing a "Failed to load resource: net::ERR_FILE_NOT_FOUND" message caused by this "cordova.js" script?
+  * The cordova.js script is required if you convert your "Standard HTML5" project into a "Cordova" project.
+  * You can safely ignore the error or comment out this line if you will not be developing a Cordova app.
+-->
+        <script src="cordova.js" id="xdkJScordova_"></script>
+
+        
+        <script src="js/init-app.js"></script>
+        <!-- for your init code, see README and file comments for details -->
+        <script src="xdk/init-dev.js"></script>
+        <!-- normalizes device and document ready events, see file for details -->
+        <script type="application/javascript" src="lib/jquery.min.js"></script>
+        <script type="application/javascript" src="jqm/jquery.mobile-min.js" data-ver="0"></script>
+        <script type="application/javascript" src="sidebar/js/hammer.js"></script>
+        <script type="application/javascript" src="sidebar/js/jquery.hammer.js"></script>
+        <script type="application/javascript" src="sidebar/js/swipe-hammer.js"></script>
+        <script type="application/javascript" src="sidebar/js/sidebar.js"></script>
+        <script type="application/javascript" src="js/index_user_scripts.js"></script>
+        <script type="application/javascript" src="xdk/ad/jqm_subpage.js"></script>
+        <script type="application/javascript" src="popup/popup.min.js"></script>
+        <script src="js/app.js"></script>
+        <!-- for your event code, see README and file comments for details -->
+   
+    </head>
+
+    <body>
+        <!-- IMPORTANT: Do not include a weinre script tag as part of your release builds! -->
+        <!-- Place your remote debugging (weinre) script URL from the Test tab here, if it does not work above -->
+        <!-- <script src="http://debug-software.intel.com/target/target-script-min.js#insertabiglongfunkynumberfromthexdkstesttab"></script> -->
+        <div class="upage" id="mainpage" data-role="page">
+            <div class="upage-outer">
+                <div data-role="header" class="container-group inner-element uib_w_3" data-uib="jquery_mobile/header" data-ver="0" data-position="fixed">
+                    <h1 onload="myAlert()">Basic Paediatric Protocols</h1>
+                    <div class="widget-container wrapping-col single-centered"></div>
+                    <div class="widget-container content-area horiz-area wrapping-col left"></div>
+                    <div class="widget-container content-area horiz-area wrapping-col right"></div>
+                </div>
+                <div class="upage-content ac0 content-area vertical-col left" id="page_26_40">
+                    <div class="tarea widget uib_w_2 d-margins Splash" data-uib="media/text" data-ver="0" name="uib_w_2">
+                        <div class="widget-container left-receptacle"></div>
+                        <div class="widget-container right-receptacle"></div>
+                        <div class="text-container">
+                            <p>BASIC PAEDIATRIC PROTOCOLS</p>
+
+                            <p>KENYA</p>
+
+                            <p>&nbsp;</p>
+
+                            <p>for ages upto 5 years</p>
+
+                            <p>&nbsp;</p>
+
+                            <p>&nbsp;</p>
+
+                            <p>NOVEMBER 2015 EDITION</p>
+                        </div>
+                    </div>
+                    <a class="widget uib_w_23 d-margins" data-uib="jquery_mobile/button" data-ver="0" data-role="button">Proceed</a>
+                </div>
+
+            </div>
+        </div>
+        <div class="upage" id="Main" data-role="page">
+            <div class="upage-outer">
+                <div data-role="header" class="container-group inner-element uib_w_4" data-uib="jquery_mobile/header" data-ver="0" data-position="fixed" data-theme="a">
+                    <h1>Basic Paediatric Protocols - KE</h1>
+                    <div class="widget-container wrapping-col single-centered"></div>
+                    <div class="widget-container content-area horiz-area wrapping-col left"></div>
+                    <div class="widget-container content-area horiz-area wrapping-col right"></div>
+                </div>
+                <div data-role="footer" data-id="foo1" data-position="fixed">
+                    <div data-role="navbar">
+                        <ul>
+                            <li><a href="a.html" class="ui-btn-active ui-state-persist">Home</a>
+                            </li>
+                            <li><a href="b.html" class="ui-btn-active ui-state-persist">Drugs</a>
+                            </li>
+                            <li><a href="c.html" class="ui-btn-active ui-state-persist">Help</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- /navbar -->
+                </div>
+                <!-- /footer -->
+                <div class="upage-content ac0 content-area vertical-col left" id="page_10_1">
+
+                    <div class="tarea widget uib_w_5 Normal Titles" data-uib="media/text" data-ver="0" name="uib_w_5">
+                        <div class="widget-container left-receptacle"></div>
+                        <div class="widget-container right-receptacle"></div>
+                        <div class="text-container">
+                            <p>Home</p>
+                        </div>
+                    </div>
+                    <div data-role="collapsible-set" class="no_wrap widget uib_w_6 d-margins" data-uib="jquery_mobile/accordion" data-ver="0" data-collapsed-icon="plus" data-expanded-icon="minus" data-mini="true" data-inset="false">
+                        <div class="widget uib_w_7 ui-content no_wrap outset-margin Titles" data-uib="jquery_mobile/listview" data-ver="0" id="tocList">
+
+                            <ul class="collapsiblelist" data-role="listview">
+                                <li data-iconpos="right" data-shadow="false" data-corners="false" data-inset="false" class="widget uib_w_8" data-uib="jquery_mobile/listitem" data-ver="0">
+                                    <h2>Drugs</h2>
+                                </li>
+
+                                <li data-iconpos="right" data-shadow="false" data-corners="false" data-inset="false" class="widget uib_w_9" data-uib="jquery_mobile/listitem" data-ver="0">
+                                    <h2>Triage</h2>
+                                </li>
+
+                                <li data-role="collapsible" data-iconpos="right" data-shadow="false" data-inset="false" data-corners="false" class="widget uib_w_10" data-uib="jquery_mobile/listitem" data-ver="0">
+                                    <h2>Resuscitation and Emergency Care</h2>
+                                    <ul>
+                                        <li class="widget uib_w_811" data-uib="jquery_mobile/listitem" data-ver="0" data-inset="false">
+                                            <h2>Basic life support</h2>
+                                        </li>
+                                        <li class="widget uib_w_812" data-uib="jquery_mobile/listitem" data-ver="0" data-inset="false">
+                                            <h2>Infant/Child with signs of life</h2>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li data-role="collapsible" data-iconpos="right" data-shadow="false" data-inset="false" data-corners="false" class="widget uib_w_11" data-uib="jquery_mobile/listitem" data-ver="0">
+                                    <h2>Newborn Care</h2>
+                                    <ul>
+                                        <li class="widget uib_w_813" data-uib="jquery_mobile/listitem" data-ver="0" data-inset="false">
+                                            <h2>Resuscitation</h2>
+                                        </li>
+                                        <li class="widget uib_w_814" data-uib="jquery_mobile/listitem" data-ver="0" data-inset="false">
+                                            <h2>Sepsis</h2>
+                                        </li>
+                                        <li class="widget uib_w_815" data-uib="jquery_mobile/listitem" data-ver="0" data-inset="false">
+                                            <h2>Jaundice</h2>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li data-role="collapsible" data-iconpos="right" data-shadow="false" data-corners="false" data-inset="false" class="widget uib_w_12" data-uib="jquery_mobile/listitem" data-ver="0">
+                                    <h2>Fluids and Feeding</h2>
+                                    <ul>
+                                        <li class="widget uib_w_816" data-uib="jquery_mobile/listitem" data-ver="0" data-inset="false">
+                                            <h2>Neonatal</h2>
+                                        </li>
+                                        <li class="widget uib_w_817" data-uib="jquery_mobile/listitem" data-ver="0" data-inset="false">
+                                            <h2>Maintenance fluids</h2>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li data-role="collapsible" data-iconpos="right" data-shadow="false" data-corners="false" data-inset="false" class="widget uib_w_13" data-uib="jquery_mobile/listitem" data-ver="0">
+
+                                    <h2>Major Conditions</h2>
+                                    <ul>
+                                        <li class="widget uib_w_818" data-uib="jquery_mobile/listitem" data-ver="0" data-inset="false">
+                                            <h2>Asthma</h2>
+                                        </li>
+                                        <li class="widget uib_w_819" data-uib="jquery_mobile/listitem" data-ver="0" data-inset="false">
+                                            <h2>Convulsions</h2>
+                                        </li>
+                                        <li class="widget uib_w_820" data-uib="jquery_mobile/listitem" data-ver="0">
+                                            <h2>Diarrhoea/Dehydration</h2>
+                                        </li>
+                                        <li class="widget uib_w_821" data-uib="jquery_mobile/listitem" data-ver="0">
+                                            <h2>HIV</h2>
+                                            <ul>
+                                                <li class="widget uib_w_822" data-uib="jquery_mobile/listitem" data-ver="0">
+                                                    <h2>PITC</h2>
+                                                </li>
+                                                <li class="widget uib_w_823" data-uib="jquery_mobile/listitem" data-ver="0">
+                                                    <h2>Management</h2>
+                                                </li>
+                                                <li class="widget uib_w_824" data-uib="jquery_mobile/listitem" data-ver="0">
+                                                    <h2>PMTCT Nevirapine prophylaxis</h2>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="widget uib_w_825" data-uib="jquery_mobile/listitem" data-ver="0">
+                                            <h2>Malaria</h2>
+                                        </li>
+                                        <li class="widget uib_w_826" data-uib="jquery_mobile/listitem" data-ver="0">
+                                            <h2>Malnutrition</h2>
+                                            <ul>
+                                                <li class="widget uib_w_827" data-uib="jquery_mobile/listitem" data-ver="0">
+                                                    <h2>MUAC</h2>
+                                                </li>
+                                                <li class="widget uib_w_828" data-uib="jquery_mobile/listitem" data-ver="0">
+                                                    <h2>10 Steps</h2>
+                                                </li>
+                                                <li class="widget uib_w_829" data-uib="jquery_mobile/listitem" data-ver="0">
+                                                    <h2>Fluid Management</h2>
+                                                </li>
+                                                <li class="widget uib_w_830" data-uib="jquery_mobile/listitem" data-ver="0">
+                                                    <h2>Feeding</h2>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="widget uib_w_831" data-uib="jquery_mobile/listitem" data-ver="0">
+                                            <h2>Meningitis</h2>
+                                        </li>
+                                        <li class="widget uib_w_832" data-uib="jquery_mobile/listitem" data-ver="0">
+                                            <h2>Pneumonia</h2>
+                                            <ul>
+                                                <li class="widget uib_w_833" data-uib="jquery_mobile/listitem" data-ver="0">
+                                                    <h2>Treatment flowchart</h2>
+                                                </li>
+                                                <li class="widget uib_w_834" data-uib="jquery_mobile/listitem" data-ver="0">
+                                                    <h2>Treatment failure definitions</h2>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="widget uib_w_835" data-uib="jquery_mobile/listitem" data-ver="0">
+                                            <h2>Pulmonary Tuberculosis</h2>
+                                            <ul>
+                                                <li class="widget uib_w_838" data-uib="jquery_mobile/listitem" data-ver="0">
+                                                    <h2>Diagnostic algorithm</h2>
+                                                </li>
+                                                <li class="widget uib_w_839" data-uib="jquery_mobile/listitem" data-ver="0">
+                                                    <h2>Treatment regimens</h2>
+                                                </li>
+                                            </ul>
+                                        </li>
+
+                                    </ul>
+                                </li>
+                                <li data-iconpos="right" data-shadow="false" data-corners="false" class="widget uib_w_14" data-uib="jquery_mobile/listitem" data-ver="0">
+                                    <h4>Procedures</h4>
+                                </li>
+                                <li data-role="collapsible" data-iconpos="right" data-shadow="false" data-corners="false" class="widget uib_w_15" data-uib="jquery_mobile/listitem" data-ver="0">
+                                    <h4>Anthropometry</h4>
+                                    <ul>
+                                        <li class="widget uib_w_836" data-uib="jquery_mobile/listitem" data-ver="0">
+                                            <h2>Weight estimation</h2>
+                                        </li>
+                                        <li class="widget uib_w_837" data-uib="jquery_mobile/listitem" data-ver="0">
+                                            <h2>Weight for Height Tables</h2>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div id="Drugs1" class="upage-content vertical-col left hidden">
+                    <div class="tarea widget uib_w_17 Normal Titles" data-uib="media/text" data-ver="0" name="uib_w_17">
+                        <div class="widget-container left-receptacle"></div>
+                        <div class="widget-container right-receptacle"></div>
+                        <div class="text-container">
+                            <p>Essential Drugs</p>
+                        </div>
+                    </div>
+                    <div class="widget uib_w_18 ui-content no_wrap outset-margin d-margins" data-uib="jquery_mobile/listview" data-ver="0">
+                        <ul data-role="listview">
+                            <li id="adrenaline" class="widget uib_w_19" data-uib="jquery_mobile/listitem" data-ver="0"><span>Adrenaline</span>
+                            </li>
+                            <li id="albendazole" class="widget uib_w_20" data-uib="jquery_mobile/listitem" data-ver="0"><span>Albendazole</span>
+                            </li>
+                            <li id="amikacin" class="widget uib_w_21" data-uib="jquery_mobile/listitem" data-ver="0"><span>Amikacin</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="Triage" class="upage-content vertical-col left hidden">
+                    <div class="widget uib_w_16 Titles" data-uib="media/img" data-ver="0">
+                        <figure class="figure-align">
+                            <img src="images/Triage.png">
+
+                            <figcaption data-position="bottom"></figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <div id="Drugs2" class="upage-content vertical-col left hidden">
+                    <div class="tarea widget uib_w_24 Titles Normal" data-uib="media/text" data-ver="0" name="uib_w_24">
+                        <div class="widget-container left-receptacle"></div>
+                        <div class="widget-container right-receptacle"></div>
+                        <div class="text-container">
+                            <p>Essential Drugs -&nbsp;</p>
+                        </div>
+                    </div>
+                    <div data-role="controlgroup" class="uib-jqm-flex widget uib_w_25 d-margins" data-uib="jquery_mobile/button_group" data-ver="0" data-type="horizontal">
+                        <a class="widget uib_w_26 d-margins" data-uib="jquery_mobile/button" data-ver="0" data-role="button">Calculator</a><a class="widget uib_w_27" data-uib="jquery_mobile/button" data-ver="0" data-role="button">Guidelines</a>
+                    </div>
+                    <div class="table-thing with-label widget uib_w_28 d-margins" data-uib="jquery_mobile/input" data-ver="0">
+                        <label class="narrow-control"></label>
+                        <input id="weight" class="wide-control" placeholder="weight" type="number">
+                    </div>
+                    <div class="table-thing with-label widget uib_w_29 d-margins" data-uib="jquery_mobile/input" data-ver="0">
+                        <label class="narrow-control"></label>
+                        <input id="age" class="wide-control" placeholder="age" type="number">
+                    </div>
+                    <div id="ageclass" class="table-thing with-label widget uib_w_30 d-margins" data-uib="jquery_mobile/select" data-ver="0">
+                        <label class="narrow-control"></label>
+                        <div data-role="fieldgroup" class+="" "wide-control"="">
+                            <select>
+                                <option>Days</option>
+                                <option>Months</option>
+                                <option>Years</option>
+                            </select>
+                        </div>
+                    </div>
+                    <button id="target"> Click here</button>
+                    <div id="result"></div>
+
+                    <div class="tarea widget uib_w_22 d-margins" data-uib="media/text" data-ver="0" name="uib_w_22">
+                        <div class="widget-container left-receptacle"></div>
+                        <div class="widget-container right-receptacle"></div>
+                        <div class="text-container"></div>
+                    </div>
+                    <div class="table-thing with-label widget uib_w_883 d-margins" data-uib="jquery_mobile/input" data-ver="0">
+                        <label class="narrow-control label-inline">Username</label>
+                        <input class="wide-control" placeholder="Your Username" type="text">
+                    </div>
+                </div>
+                <div id="Drugs3" class="upage-content vertical-col left hidden"></div>
+                <div id="bls" class="upage-content vertical-col left hidden">
+                    <div class="widget uib_w_32 scale-image d-margins" data-uib="media/img" data-ver="0">
+                        <figure class="figure-align">
+                            <img src="images/bls.png">
+
+                            <figcaption data-position="bottom"></figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <div id="childWithLifeSigns" class="upage-content vertical-col left hidden">
+                    <div class="widget uib_w_33 scale-image d-margins" data-uib="media/img" data-ver="0">
+                        <figure class="figure-align">
+                            <img src="images/withLifeSigns.png">
+
+                            <figcaption data-position="bottom"></figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <div id="neoResuscitation" class="upage-content vertical-col left hidden">
+                    <div class="tarea widget uib_w_840 Titles Normal" data-uib="media/text" data-ver="0" name="uib_w_840">
+                        <div class="widget-container left-receptacle"></div>
+                        <div class="widget-container right-receptacle"></div>
+                        <div class="text-container">
+                            <p>Neonatal Resuscitation</p>
+                        </div>
+                    </div>
+                    <div class="widget uib_w_841 imagesmargins" data-uib="media/img" data-ver="0">
+                        <figure class="figure-align">
+                            <img src="images/newbornResuscitation.png">
+                            <figcaption data-position="bottom"></figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <div id="neoSepsis" class="upage-content vertical-col left hidden">
+                    <div class="tarea widget uib_w_842 Titles Normal" data-uib="media/text" data-ver="0" name="uib_w_842">
+                        <div class="widget-container left-receptacle"></div>
+                        <div class="widget-container right-receptacle"></div>
+                        <div class="text-container">
+                            <p>Neonatal Sepsis</p>
+                        </div>
+                    </div>
+                    <div class="widget uib_w_843 imagesmargins" data-uib="media/img" data-ver="0">
+                        <figure class="figure-align">
+                            <img src="images/neonatalSepsis.png">
+
+                            <figcaption data-position="bottom"></figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <div id="neoJaundice" class="upage-content vertical-col left hidden">
+                    <div class="tarea widget uib_w_844 Titles Normal" data-uib="media/text" data-ver="0" name="uib_w_844">
+                        <div class="widget-container left-receptacle"></div>
+                        <div class="widget-container right-receptacle"></div>
+                        <div class="text-container">
+                            <p>Neonatal Jaundice</p>
+                        </div>
+                    </div>
+                    <div class="widget uib_w_845 scale-image d-margins" data-uib="media/img" data-ver="0">
+                        <figure class="figure-align">
+                            <img src="images/neonatalJaundice.png">
+                            <figcaption data-position="bottom"></figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <div id="neoFeedFluids" class="upage-content vertical-col left hidden"></div>
+                <div id="maintenanceFluids" class="upage-content vertical-col left hidden">
+                    <div class="tarea widget uib_w_846 Normal Titles" data-uib="media/text" data-ver="0" name="uib_w_846">
+                        <div class="widget-container left-receptacle"></div>
+                        <div class="widget-container right-receptacle"></div>
+                        <div class="text-container">
+                            <p>Initial Maintenance fluids/feeds</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="asthma" class="upage-content vertical-col left hidden">
+                    <div class="tarea widget uib_w_847 Titles Normal" data-uib="media/text" data-ver="0" name="uib_w_847">
+                        <div class="widget-container left-receptacle"></div>
+                        <div class="widget-container right-receptacle"></div>
+                        <div class="text-container">
+                            <p>Possible Asthma</p>
+                        </div>
+                    </div>
+                    <div class="widget uib_w_848 scale-image d-margins" data-uib="media/img" data-ver="0">
+                        <figure class="figure-align">
+                            <img src="images/asthma.png">
+                            <figcaption data-position="bottom"></figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <div id="convulsions" class="upage-content vertical-col left hidden">
+                    <div class="tarea widget uib_w_849 Titles Normal" data-uib="media/text" data-ver="0" name="uib_w_849">
+                        <div class="widget-container left-receptacle"></div>
+                        <div class="widget-container right-receptacle"></div>
+                        <div class="text-container">
+                            <p>Treatment of convulsions</p>
+                        </div>
+                    </div>
+                    <div class="widget uib_w_850 imagesmargins" data-uib="media/img" data-ver="0">
+                        <figure class="figure-align">
+                            <img src="images/convulsions.png">
+                            <figcaption data-position="bottom"></figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <div id="diarrhoea" class="upage-content vertical-col left hidden">
+                    <div class="tarea widget uib_w_851 Titles Normal" data-uib="media/text" data-ver="0" name="uib_w_851">
+                        <div class="widget-container left-receptacle"></div>
+                        <div class="widget-container right-receptacle"></div>
+                        <div class="text-container">
+                            <p>Diarrhoea/Gastroenteritis</p>
+                        </div>
+                    </div>
+                    <div class="widget uib_w_852 imagesmargins" data-uib="media/img" data-ver="0">
+                        <figure class="figure-align">
+                            <img src="images/diarrhoea1.png">
+                            <figcaption data-position="bottom"></figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <div id="PITC" class="upage-content vertical-col left hidden">
+                    <div class="tarea widget uib_w_853 Normal Titles" data-uib="media/text" data-ver="0" name="uib_w_853">
+                        <div class="widget-container left-receptacle"></div>
+                        <div class="widget-container right-receptacle"></div>
+                        <div class="text-container">
+                            <p>PITC</p>
+                        </div>
+                    </div>
+                    <div class="widget uib_w_854 imagesmargins" data-uib="media/img" data-ver="0">
+                        <figure class="figure-align">
+                            <img src="images/pitc.png">
+                            <figcaption data-position="bottom"></figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <div id="hivMgt" class="upage-content vertical-col left hidden">
+                    <div class="tarea widget uib_w_855 Normal Titles" data-uib="media/text" data-ver="0" name="uib_w_855">
+                        <div class="widget-container left-receptacle"></div>
+                        <div class="widget-container right-receptacle"></div>
+                        <div class="text-container">
+                            <p>Managing the HIV exposed/infected infant</p>
+                        </div>
+                    </div>
+                    <div class="widget uib_w_856 scale-image d-margins" data-uib="media/img" data-ver="0">
+                        <figure class="figure-align">
+                            <img src="images/hiv1.png">
+                            <figcaption data-position="bottom"></figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <div id="pmtct" class="upage-content vertical-col left hidden">
+                    <div class="tarea widget uib_w_857 Normal Titles" data-uib="media/text" data-ver="0" name="uib_w_857">
+                        <div class="widget-container left-receptacle"></div>
+                        <div class="widget-container right-receptacle"></div>
+                        <div class="text-container">
+                            <p>PMTCT Nevirapine Prophylaxis</p>
+                        </div>
+                    </div>
+                    <div class="widget uib_w_858 imagesmargins" data-uib="media/img" data-ver="0">
+                        <figure class="figure-align">
+                            <img src="images/pmtct.png">
+                            <figcaption data-position="bottom"></figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <div id="malaria" class="upage-content vertical-col left hidden">
+                    <div class="tarea widget uib_w_859 Normal Titles" data-uib="media/text" data-ver="0" name="uib_w_859">
+                        <div class="widget-container left-receptacle"></div>
+                        <div class="widget-container right-receptacle"></div>
+                        <div class="text-container">
+                            <p>Malaria</p>
+                        </div>
+                    </div>
+                    <div class="widget uib_w_860 scale-image d-margins" data-uib="media/img" data-ver="0">
+                        <figure class="figure-align">
+                            <img src="images/malaria1.png">
+                            <figcaption data-position="bottom"></figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <div id="muac" class="upage-content vertical-col left hidden">
+                    <div class="tarea widget uib_w_861 Normal Titles" data-uib="media/text" data-ver="0" name="uib_w_861">
+                        <div class="widget-container left-receptacle"></div>
+                        <div class="widget-container right-receptacle"></div>
+                        <div class="text-container">
+                            <p>Measuring Nutritional Status</p>
+                        </div>
+                    </div>
+                    <div class="widget uib_w_862 scale-image imagesmargins" data-uib="media/img" data-ver="0">
+                        <figure class="figure-align">
+                            <img src="images/muac.png">
+                            <figcaption data-position="bottom"></figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <div id="steps" class="upage-content vertical-col left hidden">
+                    <div class="tarea widget uib_w_863 Normal Titles" data-uib="media/text" data-ver="0" name="uib_w_863">
+                        <div class="widget-container left-receptacle"></div>
+                        <div class="widget-container right-receptacle"></div>
+                        <div class="text-container">
+                            <p>10 steps</p>
+                        </div>
+                    </div>
+                    <div class="widget uib_w_864 scale-image d-margins" data-uib="media/img" data-ver="0">
+                        <figure class="figure-align">
+                            <img src="images/10Steps.png">
+                            <figcaption data-position="bottom"></figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <div id="mlnFluidMgt" class="upage-content vertical-col left hidden">
+                    <div class="tarea widget uib_w_865 Normal Titles" data-uib="media/text" data-ver="0" name="uib_w_865">
+                        <div class="widget-container left-receptacle"></div>
+                        <div class="widget-container right-receptacle"></div>
+                        <div class="text-container">
+                            <p>Fluid Management in SAM with diarrhoea</p>
+                        </div>
+                    </div>
+                    <div class="widget uib_w_866 scale-image d-margins" data-uib="media/img" data-ver="0">
+                        <figure class="figure-align">
+                            <img src="images/sam1.png">
+                            <figcaption data-position="bottom"></figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <div id="mlnFeeds" class="upage-content vertical-col left hidden">
+                    <div class="tarea widget uib_w_867 Normal Titles" data-uib="media/text" data-ver="0" name="uib_w_867">
+                        <div class="widget-container left-receptacle"></div>
+                        <div class="widget-container right-receptacle"></div>
+                        <div class="text-container">
+                            <p>Feeding children with SAM</p>
+                        </div>
+                    </div>
+                    <div class="widget uib_w_868 scale-image d-margins" data-uib="media/img" data-ver="0">
+                        <figure class="figure-align">
+                            <img src="images/sam2.png">
+                            <figcaption data-position="bottom"></figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <div id="meningitis" class="upage-content vertical-col left hidden">
+                    <div class="tarea widget uib_w_869 Normal Titles" data-uib="media/text" data-ver="0" name="uib_w_869">
+                        <div class="widget-container left-receptacle"></div>
+                        <div class="widget-container right-receptacle"></div>
+                        <div class="text-container">
+                            <p>Meningitis</p>
+                        </div>
+                    </div>
+                    <div class="widget uib_w_870 scale-image d-margins" data-uib="media/img" data-ver="0">
+                        <figure class="figure-align">
+                            <img src="images/meningitis.png">
+                            <figcaption data-position="bottom"></figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <div id="pneuTrFlow" class="upage-content vertical-col left hidden">
+                    <div class="tarea widget uib_w_871 Normal Titles" data-uib="media/text" data-ver="0" name="uib_w_871">
+                        <div class="widget-container left-receptacle"></div>
+                        <div class="widget-container right-receptacle"></div>
+                        <div class="text-container">
+                            <p>Pneumonia</p>
+                        </div>
+                    </div>
+                    <div class="widget uib_w_872 scale-image d-margins" data-uib="media/img" data-ver="0">
+                        <figure class="figure-align">
+                            <img src="images/pneumonia1.png">
+                            <figcaption data-position="bottom"></figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <div id="pneuTrFail" class="upage-content vertical-col left hidden">
+                    <div class="tarea widget uib_w_873 Normal Titles" data-uib="media/text" data-ver="0" name="uib_w_873">
+                        <div class="widget-container left-receptacle"></div>
+                        <div class="widget-container right-receptacle"></div>
+                        <div class="text-container">
+                            <p>Pneumonia treatment failure definitions</p>
+                        </div>
+                    </div>
+                    <div class="widget uib_w_874 scale-image d-margins" data-uib="media/img" data-ver="0">
+                        <figure class="figure-align">
+                            <img src="images/pneumonia2.png">
+                            <figcaption data-position="bottom"></figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <div id="ptbDxAlg" class="upage-content vertical-col left hidden">
+                    <div class="tarea widget uib_w_875 Normal Titles" data-uib="media/text" data-ver="0" name="uib_w_875">
+                        <div class="widget-container left-receptacle"></div>
+                        <div class="widget-container right-receptacle"></div>
+                        <div class="text-container">
+                            <p>Tuberculosis - Diagnostic Algorithm</p>
+                        </div>
+                    </div>
+                    <div class="widget uib_w_876 scale-image d-margins" data-uib="media/img" data-ver="0">
+                        <figure class="figure-align">
+                            <img src="images/tb1.png">
+                            <figcaption data-position="bottom"></figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <div id="tbRegimens" class="upage-content vertical-col left hidden">
+                    <div class="tarea widget uib_w_877 Normal Titles" data-uib="media/text" data-ver="0" name="uib_w_877">
+                        <div class="widget-container left-receptacle"></div>
+                        <div class="widget-container right-receptacle"></div>
+                        <div class="text-container">
+                            <p>Tuberculosis - Management</p>
+                        </div>
+                    </div>
+                    <div class="widget uib_w_878 scale-image d-margins" data-uib="media/img" data-ver="0">
+                        <figure class="figure-align">
+                            <img src="images/tb2.png">
+                            <figcaption data-position="bottom"></figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <div id="procedures" class="upage-content vertical-col left hidden">
+                    <div class="tarea widget uib_w_879 Normal Titles" data-uib="media/text" data-ver="0" name="uib_w_879">
+                        <div class="widget-container left-receptacle"></div>
+                        <div class="widget-container right-receptacle"></div>
+                        <div class="text-container">
+                            <p>Procedures</p>
+                        </div>
+                    </div>
+                    <div class="widget uib_w_880 scale-image d-margins" data-uib="media/img" data-ver="0">
+                        <figure class="figure-align">
+                            <img src="images/procedures.png">
+                            <figcaption data-position="bottom"></figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <div id="wtEst" class="upage-content vertical-col left hidden">
+                    <div class="tarea widget uib_w_881 Normal Titles" data-uib="media/text" data-ver="0" name="uib_w_881">
+                        <div class="widget-container left-receptacle"></div>
+                        <div class="widget-container right-receptacle"></div>
+                        <div class="text-container">
+                            <p>Weight estimation</p>
+                        </div>
+                    </div>
+                    <div class="widget uib_w_882 scale-image d-margins" data-uib="media/img" data-ver="0">
+                        <figure class="figure-align">
+                            <img src="images/wtEstimation.png">
+                            <figcaption data-position="bottom"></figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <div id="wfh" class="upage-content vertical-col left hidden"></div>
+
+            </div>
+        </div>
+    </body>
+
+</html>
