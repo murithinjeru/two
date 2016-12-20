@@ -1,26 +1,18 @@
 {
   "project": {
-    "projectSettingsVersion": "3.0.0",
+    "projectSettingsVersion": "2.0.0",
     "creationData": {
       "type": "App Designer",
       "projectTypeName": "com.intel.xdk.projecttype.jsapp",
       "src": "appDesigner",
       "projectGuid": "6c0d7f23-200b-46bc-b639-e628581e9e6b",
-      "lastModifiedDate": 1465628335018,
+      "lastModifiedDate": 1458837529451,
       "creationDate": 1452691002978
     },
     "XDK-app-designer": "true",
     "sourceDirectory": "www",
     "startFile": "index.html",
-    "projectFiles": {
-      "xdk-publish-meta-data.json": {
-        "settings": {
-          "project": {
-            "XDK-not-deployed": "True"
-          }
-        }
-      }
-    },
+    "projectFiles": {},
     "projectDirectories": {},
     "libraries": [],
     "serviceMethods": [],
@@ -29,7 +21,7 @@
       {
         "id": "cordova-plugin-statusbar",
         "name": "StatusBar",
-        "version": "2.1.0",
+        "version": "2.0.0",
         "originType": "cordova.io",
         "origin": "cordova-plugin-statusbar",
         "gitref": "",
@@ -42,19 +34,19 @@
         "description": "Cordova StatusBar Plugin",
         "data": {},
         "dependedBy": [],
-        "checksum": "858cc583"
+        "checksum": "b92cbbef"
       },
       {
         "id": "cordova-plugin-device",
         "name": "Device",
-        "version": "1.1.1",
+        "version": "1.1.0",
         "originType": "cordova.io",
         "origin": "cordova-plugin-device",
         "gitref": "",
         "paramvals": {},
         "sourceLocation": "plugins/cordova-plugin-device",
         "selectedState": "Included",
-        "checksum": "927290ca",
+        "checksum": "1eae5d64",
         "dependsOn": [],
         "topLevel": true,
         "permissions": {},
@@ -65,33 +57,33 @@
       {
         "id": "cordova-plugin-splashscreen",
         "name": "Splashscreen",
-        "version": "3.2.0",
+        "version": "2.1.0",
         "originType": "cordova.io",
         "origin": "cordova-plugin-splashscreen",
         "gitref": "",
         "paramvals": {},
         "sourceLocation": "plugins/cordova-plugin-splashscreen",
         "selectedState": "Included",
-        "checksum": "452a4659",
+        "checksum": "170efb68",
         "dependsOn": [],
         "topLevel": true,
         "permissions": {},
         "description": "Cordova Splashscreen Plugin",
         "data": {},
         "dependedBy": [],
-        "cordovaVersion": ">=3.0.0"
+        "cordovaVersion": ">=3.1.0"
       },
       {
         "id": "cordova-plugin-inappbrowser",
         "name": "InAppBrowser",
-        "version": "1.3.0",
+        "version": "1.0.1",
         "originType": "cordova.io",
         "origin": "cordova-plugin-inappbrowser",
         "gitref": "",
         "paramvals": {},
         "sourceLocation": "plugins/cordova-plugin-inappbrowser",
         "selectedState": "Included",
-        "checksum": "20f7ee20",
+        "checksum": "56efa690",
         "dependsOn": [],
         "topLevel": true,
         "cordovaVersion": ">=3.1.0",
@@ -99,50 +91,40 @@
         "description": "Cordova InAppBrowser Plugin",
         "data": {},
         "dependedBy": []
-      },
-      {
-        "id": "cordova-plugin-whitelist",
-        "name": "Whitelist",
-        "version": "1.2.2-dev",
-        "originType": "repo",
-        "origin": "https://github.com/apache/cordova-plugin-whitelist.git",
-        "gitref": "",
-        "subdir": ".",
-        "paramvals": {},
-        "sourceLocation": "plugins/cordova-plugin-whitelist",
-        "selectedState": "Included",
-        "checksum": "ba63ddd3",
-        "dependsOn": [],
-        "topLevel": true,
-        "cordovaVersion": ">=3.0.0",
-        "permissions": {},
-        "description": "Cordova Network Whitelist Plugin",
-        "data": {},
-        "dependedBy": [],
-        "custom": "true"
-      },
-      {
-        "id": "cordova-plugin-screen-orientation",
-        "name": "Screen Orientation",
-        "version": "1.4.2",
-        "originType": "repo",
-        "origin": "https://github.com/apache/cordova-plugin-screen-orientation",
-        "gitref": "",
-        "subdir": ".",
-        "paramvals": {},
-        "sourceLocation": "plugins/cordova-plugin-screen-orientation",
-        "selectedState": "Included",
-        "checksum": "10d29040",
-        "dependsOn": [],
-        "topLevel": true,
-        "cordovaVersion": ">=3.0.0",
-        "permissions": {},
-        "description": "Adds Screen Orientation API lock and unlock functions to the global screen object in android, iOS, WP8, W8.1, and BB10.",
-        "data": {},
-        "dependedBy": []
       }
     ],
     "buildConfigurations": {
+      "Android-Crosswalk": {
+        "platform_": "android",
+        "runtime_": "Crosswalk with Cordova 3.x",
+        "name_": "Android-Crosswalk",
+        "preferences_": {
+          "android-minSdkVersion": "14",
+          "android-targetSdkVersion": "19",
+          "android-installLocation": "auto"
+        },
+        "isActive_": true,
+        "appName_": "two",
+        "appID_": "xdk.intel.blank.ad.template.crosswalk",
+        "appAccess_": {
+          "mode": "legacy",
+          "network": [
+            "*"
+          ],
+          "intents": [],
+          "navigation": []
+        },
+        "icons_": [],
+        "splashes_": [],
+        "addlPermissions_": "",
+        "excludedLibraries_": "",
+        "cordovaCLIVersion_": "5.1.1",
+        "crosswalkVersion_": "15",
+        "appVersion_": "0.0.1",
+        "appAuthor_": "Intel XDK",
+        "appDescription_": "Template to develop a Cordova mobile web app using the App Designer UI editor.",
+        "appVersionCode_": "1"
+      },
       "Android": {
         "platform_": "android",
         "runtime_": "Cordova 3.x",
@@ -154,103 +136,53 @@
           "Fullscreen": false
         },
         "isActive_": true,
-        "appName_": "Paediatric Protocols",
-        "appID_": "bpp.kelvian.com",
+        "appName_": "two",
+        "appID_": "xdk.intel.blank.ad.template",
         "appAccess_": {
           "mode": "whitelist",
           "network": [
-            "*"
+            "*",
+            "http://news.google.com/news?hl=ja&ned=us&ie=UTF-8&oe=UTF-8&output=atom&topic=h"
           ],
           "intents": [],
-          "navigation": [],
-          "properties": {}
+          "navigation": []
         },
-        "icons_": [
-          {
-            "relPath": "images/ldpi.png",
-            "density": "ldpi",
-            "height": 36,
-            "width": 36
-          },
-          {
-            "relPath": "images/mdpi.png",
-            "density": "mdpi",
-            "height": 48,
-            "width": 48
-          },
-          {
-            "relPath": "images/hdpi.png",
-            "density": "hdpi",
-            "height": 72,
-            "width": 72
-          },
-          {
-            "relPath": "images/xhdpi.png",
-            "density": "xhdpi",
-            "height": 96,
-            "width": 96
-          }
-        ],
-        "splashes_": [
-          {
-            "relPath": "images/Splash1.png",
-            "density": "ldpi",
-            "height": 320,
-            "width": 426,
-            "orientation": "landscape"
-          },
-          {
-            "relPath": "images/Splash3.png",
-            "density": "xhdpi",
-            "height": 720,
-            "width": 960,
-            "orientation": "landscape"
-          },
-          {
-            "relPath": "images/Splash2.png",
-            "density": "mdpi",
-            "height": 320,
-            "width": 470,
-            "orientation": "landscape"
-          }
-        ],
+        "icons_": [],
+        "splashes_": [],
         "addlPermissions_": "",
         "excludedLibraries_": "",
-        "certificateId_": "TSEPIK7MpkyKglU_W8V6Xw2",
-        "cordovaCLIVersion_": "5.4.1",
-        "appVersion_": "2.0.0",
+        "cordovaCLIVersion_": "5.1.1",
+        "crosswalkVersion_": "14",
+        "appVersion_": "0.0.1",
         "appAuthor_": "Kelvian",
-        "appDescription_": "An Adaptation of the Kenya Basic Paediatric Protocols in an intuitive mobile interface.",
-        "appVersionCode_": "1",
-        "crosswalkVersion_": "16"
+        "appDescription_": "Template to develop a Cordova mobile web app using the App Designer UI editor.",
+        "appVersionCode_": "1"
       },
       "iOS": {
         "platform_": "ios",
         "runtime_": "Cordova 3.x",
         "name_": "iOS",
         "preferences_": {
-          "ios-configuration": "adhoc",
-          "deployment-target": "6"
+          "ios-target": "6",
+          "ios-configuration": "adhoc"
         },
         "isActive_": true,
         "appName_": "two",
         "appID_": "xdk.intel.blank.ad.template",
         "appAccess_": {
-          "mode": "whitelist",
+          "mode": "legacy",
           "network": [
             "*"
           ],
           "intents": [],
-          "navigation": [],
-          "properties": {}
+          "navigation": []
         },
         "icons_": [],
         "splashes_": [],
         "addlPermissions_": "",
         "excludedLibraries_": "",
-        "certificateId_": "",
         "iosProvs_": [],
-        "cordovaCLIVersion_": "5.4.1",
+        "cordovaCLIVersion_": "5.1.1",
         "crosswalkVersion_": "14",
         "appVersion_": "0.0.1",
         "appAuthor_": "Intel XDK",
@@ -268,20 +200,18 @@
         "appName_": "two",
         "appID_": "xdk.intel.blank.ad.template",
         "appAccess_": {
-          "mode": "whitelist",
+          "mode": "legacy",
           "network": [
             "*"
           ],
           "intents": [],
-          "navigation": [],
-          "properties": {}
+          "navigation": []
         },
         "icons_": [],
         "splashes_": [],
         "addlPermissions_": "",
         "excludedLibraries_": "",
-        "certificateId_": "",
-        "cordovaCLIVersion_": "5.4.1",
+        "cordovaCLIVersion_": "5.1.1",
         "crosswalkVersion_": "14",
         "appVersion_": "0.0.0.1",
         "appAuthor_": "Intel XDK",
@@ -307,7 +237,6 @@
         "splashes_": [],
         "addlPermissions_": "",
         "excludedLibraries_": "",
-        "certificateId_": "",
         "appAuthor_": "Intel XDK",
         "appVersion_": "0.0.1"
       },
@@ -331,7 +260,6 @@
         "splashes_": [],
         "addlPermissions_": "",
         "excludedLibraries_": "",
-        "certificateId_": "",
         "appAuthor_": "Intel XDK",
         "appVersion_": "0.0.1"
       },
@@ -355,7 +283,6 @@
         "splashes_": [],
         "addlPermissions_": "",
         "excludedLibraries_": "",
-        "certificateId_": "",
         "appAuthor_": "Intel XDK",
         "appVersion_": "0.0.1"
       },
@@ -379,7 +306,6 @@
         "splashes_": [],
         "addlPermissions_": "",
         "excludedLibraries_": "",
-        "certificateId_": "",
         "appAuthor_": "Intel XDK",
         "appVersion_": "0.0.1"
       },
@@ -403,9 +329,8 @@
         "splashes_": [],
         "addlPermissions_": "",
         "excludedLibraries_": "",
-        "certificateId_": "",
         "appVersion_": "0.0.0.1",
-        "cordovaCLIVersion_": "5.4.1",
+        "cordovaCLIVersion_": "5.1.1",
         "appAuthor_": "Intel XDK"
       }
     },

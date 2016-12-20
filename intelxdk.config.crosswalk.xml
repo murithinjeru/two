@@ -9,9 +9,10 @@
 <author>Intel XDK</author>
 <content src="index.html"/>
 <access origin="*"/>
-<intelxdk:plugin intelxdk:name="StatusBar" intelxdk:value="cordova-plugin-statusbar" intelxdk:version="1.0.0" intelxdk:checksum="b4e7aac6"/>
-<intelxdk:plugin intelxdk:name="Device" intelxdk:value="cordova-plugin-device" intelxdk:version="1.0.1" intelxdk:checksum="adfc61ba"/>
+<intelxdk:plugin intelxdk:name="StatusBar" intelxdk:value="cordova-plugin-statusbar" intelxdk:version="2.0.0" intelxdk:checksum="b92cbbef"/>
+<intelxdk:plugin intelxdk:name="Device" intelxdk:value="cordova-plugin-device" intelxdk:version="1.1.0" intelxdk:checksum="1eae5d64"/>
 <intelxdk:plugin intelxdk:name="Splashscreen" intelxdk:value="cordova-plugin-splashscreen" intelxdk:version="2.1.0" intelxdk:checksum="170efb68"/>
+<intelxdk:plugin intelxdk:name="InAppBrowser" intelxdk:value="cordova-plugin-inappbrowser" intelxdk:version="1.0.1" intelxdk:checksum="56efa690"/>
 <intelxdk:plugin intelxdk:name="Cordova Legacy Whitelist Plugin" intelxdk:value="cordova-plugin-legacy-whitelist" intelxdk:version="1.1.0"/>
 <preference name="android-minSdkVersion" value="14"/>
 <preference name="android-targetSdkVersion" value="19"/>
